@@ -1,0 +1,157 @@
+ name: Auto-merge PR for Approved Users
+
+on:
+  pull_request:
+    types: [opened, synchronize, ready_for_review]
+  pull_request_review:
+    types: [submitted]
+
+jobs:
+  auto-merge:
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.draft == false
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Read approved users list
+      id: approved-users
+      run: |
+        if [ -f ".github/approved-users.yml" ]; then
+          echo "users=$(yq eval '.approved_users | join(",")' .github/approved-users.yml)" >> $GITHUB_OUTPUT
+        else
+          echo "users=" >> $GITHUB_OUTPUT
+        fi
+      
+    - name: Check if user is approved
+      id: check-approval
+      run: |
+        PR_AUTHOR="${{ github.event.pull_request.user.login }}"
+        APPROVED_USERS="${{ steps.approved-users.outputs.users }}"
+        
+        echo "PR Author: $PR_AUTHOR"
+        echo "Approved users: $APPROVED_USERS"
+        
+        if [[ ",$APPROVED_USERS," == *",$PR_AUTHOR,"* ]]; then
+          echo "approved=true" >> $GITHUB_OUTPUT
+          echo "✅ User $PR_AUTHOR is approved for auto-merge"
+        else
+          echo "approved=false" >> $GITHUB_OUTPUT
+          echo "❌ User $PR_AUTHOR is not approved for auto-merge"
+        fi
+    
+    - name: Check PR status
+      id: pr-status
+      if: steps.check-approval.outputs.approved == 'true'
+      uses: actions/github-script@v7
+      with:
+        script: |
+          const { data: pr } = await github.rest.pulls.get({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            pull_number: context.payload.pull_request.number
+          });
+          
+          // Check if PR is mergeable
+          if (pr.mergeable === false) {
+            core.setOutput('mergeable', 'false');
+            core.setOutput('reason', 'PR has merge conflicts');
+            return;
+          }
+          
+          if (pr.mergeable === null) {
+            core.setOutput('mergeable', 'unknown');
+            core.setOutput('reason', 'Mergeable status is being calculated');
+            return;
+          }
+          
+          // Check status checks
+          const { data: checks } = await github.rest.checks.listForRef({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            ref: pr.head.sha
+          });
+          
+          const { data: statuses } = await github.rest.repos.listCommitStatusesForRef({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            ref: pr.head.sha
+          });
+          
+          // Check if any required checks are failing
+          const failingChecks = checks.check_runs.filter(check => 
+            check.conclusion === 'failure' || check.conclusion === 'cancelled'
+          );
+          
+          const failingStatuses = statuses.filter(status => 
+            status.state === 'failure' || status.state === 'error'
+          );
+          
+          if (failingChecks.length > 0 || failingStatuses.length > 0) {
+            core.setOutput('mergeable', 'false');
+            core.setOutput('reason', 'Some status checks are failing');
+            return;
+          }
+          
+          // Check if any checks are still pending
+          const pendingChecks = checks.check_runs.filter(check => 
+            check.status === 'in_progress' || check.status === 'queued'
+          );
+          
+          const pendingStatuses = statuses.filter(status => 
+            status.state === 'pending'
+          );
+          
+          if (pendingChecks.length > 0 || pendingStatuses.length > 0) {
+            core.setOutput('mergeable', 'false');
+            core.setOutput('reason', 'Some status checks are still pending');
+            return;
+          }
+          
+          core.setOutput('mergeable', 'true');
+          core.setOutput('reason', 'All checks passed');
+    
+    - name: Auto-merge PR
+      if: steps.check-approval.outputs.approved == 'true' && steps.pr-status.outputs.mergeable == 'true'
+      uses: actions/github-script@v7
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        script: |
+          try {
+            await github.rest.pulls.merge({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: context.payload.pull_request.number,
+              commit_title: `Auto-merge: ${context.payload.pull_request.title}`,
+              commit_message: `Automatically merged PR from approved user: ${context.payload.pull_request.user.login}`,
+              merge_method: 'squash' // Options: 'merge', 'squash', 'rebase'
+            });
+            
+            console.log('✅ PR successfully auto-merged!');
+            
+            // Optional: Add a comment to the PR
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.pull_request.number,
+              body: '🤖 This PR was automatically merged because the author is on the approved users list.'
+            });
+            
+          } catch (error) {
+            console.error('❌ Failed to merge PR:', error.message);
+            core.setFailed(`Failed to merge PR: ${error.message}`);
+          }
+    
+    - name: Log result
+      if: always()
+      run: |
+        if [ "${{ steps.check-approval.outputs.approved }}" = "true" ]; then
+          if [ "${{ steps.pr-status.outputs.mergeable }}" = "true" ]; then
+            echo "✅ PR was auto-merged successfully"
+          else
+            echo "⏳ PR is from approved user but cannot be merged yet: ${{ steps.pr-status.outputs.reason }}"
+          fi
+        else
+          echo "ℹ️ PR author is not on the approved users list - manual review required"
+        fi

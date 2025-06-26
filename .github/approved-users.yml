@@ -1,0 +1,22 @@
+ # .github/approved-users.yml
+# List of GitHub usernames approved for auto-merge
+# Add or remove usernames as needed
+
+approved_users:
+  - adielliot37
+  - Khwahish29
+  - pranavvdesai
+  - kamuik16
+  - HarshS1611
+  - Nkovaturient
+  - namay26
+  - Dhruv-Varshney-developer
+  - raveesh146
+  - leny62
+  - Chaitu-Tatipamula
+  - 0-th
+  - kaf-lamed-beyt
+  - anushkasomani
+  - CeylonT
+  - jamiechicago312
+  # Add more usernames here as needed
