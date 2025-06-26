@@ -1,4 +1,4 @@
- name: Auto-merge PR for Approved Users
+name: Auto-merge PR for Approved Users
 
 on:
   pull_request:

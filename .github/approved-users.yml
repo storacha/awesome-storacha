@@ -1,4 +1,4 @@
- # .github/approved-users.yml
+# .github/approved-users.yml
 # List of GitHub usernames approved for auto-merge
 # Add or remove usernames as needed
 
@@ -19,5 +19,5 @@ approved_users:
   - anushkasomani
   - CeylonT
   - jamiechicago312
-  - 0-th
+  - seetadev
   # Add more usernames here as needed
