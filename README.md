@@ -34,19 +34,23 @@ This list showcases the best community-driven projects, libraries, tutorials, an
 
 > Showcase of applications and products built with Storacha.
 
-- [Project Name](https://github.com/user/project) - Short description.
+- [ChatCha](https://github.com/AkashMundari/ChatCha) - Decentralized AI agent platform with data storage and verifiability using Filecoin/IPFS.
+- [DappaDiary](https://github.com/DappaDanDev/dappaDiary) - Onchain Notebook LM for decentralized note-taking.
+- [TripMate](https://github.com/Dhruv-Varshney-developer/Tripmate-Planner) - AI-powered travel assistant with decentralized storage capabilities.
 
 ## Libraries & SDKs
 
 > Libraries, SDKs, and APIs for integrating with Storacha.
 
-- [Library Name](https://github.com/user/library) - Short description.
+- [ipfs/libp2p Huggingface Bridge](https://github.com/endomorphosis/ipfs_kit_py) - Toolkit for Storacha/IPFS integration with Hugging Face.
+- [LangChain Storacha Tool](https://github.com/black-domain/langchain-storacha-tool) - LangChain tool for agents to interact with decentralized storage network.
+- [MCP-IPFS](https://github.com/alexbakers/mcp-ipfs) - Node.js server implementing Model Context Protocol for Storacha platform interaction.
 
 ## Tools
 
 > Useful tools for developers and users of Storacha.
 
-- [Tool Name](https://github.com/user/tool) - Short description.
+- [S3 to Storacha](https://github.com/HarshS1611/storacha-migration-tool) - Migration tooling from AWS S3 to Storacha.
 
 ## Tutorials & Articles
 
