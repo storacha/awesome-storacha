@@ -3,8 +3,8 @@
 > A curated list of awesome projects, tools, and resources built by the Storacha community.
 
 [Storacha](https://storacha.network) makes it easy to store, locate, and retrieve data on the decentralized web — no infrastructure headaches, no vendor lock-in. Built on IPFS and Filecoin, Storacha turns your files into tamper-proof, content-addressed assets that live across a global peer-to-peer network. Whether you're building dApps, safeguarding public datasets, or scaling Web3 projects, Storacha ensures your data stays verifiable, portable, and accessible anywhere. With this partnership, we're making decentralized storage spicy, resilient, and ready for whatever you're building next.
-This list showcases the best community-driven projects, libraries, tutorials, and more.
-
+This list showcases the best community-driven projects, libraries, tutorials, and more. 
+ 
 ## 🌐 Connect With Us
 
 [![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/pqa6Dn6RnP)
