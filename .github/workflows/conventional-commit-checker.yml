@@ -1,0 +1,10 @@
+            - name: Conventional Commit Checker
+  # You may pin to the exact commit or the version.
+  # uses: agenthunt/conventional-commit-checker-action@9e552d650d0e205553ec7792d447929fc78e012b
+  uses: agenthunt/conventional-commit-checker-action@v2.0.0
+  with:
+    # You can override the regex that is used to match PR title 
+    pr-title-regex: # optional, default is ^(.+)(?:(([^)s]+)))?: (.+)
+    # You can override the regex that is used to match PR body 
+    pr-body-regex: # optional, default is (.*\n)+(.*)
+          
