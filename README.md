@@ -37,6 +37,7 @@ This list showcases the best community-driven projects, libraries, tutorials, an
 - [ChatCha](https://github.com/AkashMundari/ChatCha) - Decentralized AI agent platform with data storage and verifiability using Filecoin/IPFS.
 - [DappaDiary](https://github.com/DappaDanDev/dappaDiary) - Onchain Notebook LM for decentralized note-taking.
 - [TripMate](https://github.com/Dhruv-Varshney-developer/Tripmate-Planner) - AI-powered travel assistant with decentralized storage capabilities.
+- [SecretShare](https://github.com/Nkovaturient/SecretShare) - UCAN Delegations-based demo project for sharing API keys and other credentials in a fully secure and decentralized manner.
 
 ## Libraries & SDKs
 
