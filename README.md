@@ -38,6 +38,7 @@ This list showcases the best community-driven projects, libraries, tutorials, an
 - [DappaDiary](https://github.com/DappaDanDev/dappaDiary) - Onchain Notebook LM for decentralized note-taking.
 - [TripMate](https://github.com/Dhruv-Varshney-developer/Tripmate-Planner) - AI-powered travel assistant with decentralized storage capabilities.
 - [SecretShare](https://github.com/Nkovaturient/SecretShare) - UCAN Delegations-based demo project for sharing API keys and other credentials in a fully secure and decentralized manner.
+- [ShareBox](https://github.com/Dhruv-Varshney-developer/ShareBox-Storacha) - UCAN-powered file sharing platform built with Next.js for secure decentralized file uploads and access control.
 
 ## Libraries & SDKs
 
