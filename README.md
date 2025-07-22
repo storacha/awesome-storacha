@@ -53,6 +53,7 @@ This list showcases the best community-driven projects, libraries, tutorials, an
 > Useful tools for developers and users of Storacha.
 
 - [S3 to Storacha](https://github.com/HarshS1611/storacha-migration-tool) - Migration tooling from AWS S3 to Storacha.
+- [Blumen](https://github.com/StauroDEV/blumen) - CLI to deploy apps on the decentralized web with IPFS and Ethereum. Integrates with Storacha as one of the IPFS providers.
 
 ## Tutorials & Articles
 
