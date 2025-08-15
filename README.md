@@ -39,6 +39,7 @@ This list showcases the best community-driven projects, libraries, tutorials, an
 - [SecretShare](https://github.com/Nkovaturient/SecretShare) - UCAN Delegations-based demo project for sharing API keys and other credentials in a fully secure and decentralized manner.
 - [ShareBox](https://github.com/Dhruv-Varshney-developer/ShareBox-Storacha) - UCAN-powered file sharing platform built with Next.js for secure decentralized file uploads and access control.
 - [TripMate](https://github.com/Dhruv-Varshney-developer/Tripmate-Planner) - AI-powered travel assistant with decentralized storage capabilities.
+- [Gaia x Storacha](https://github.com/harishkotra/gaia-storacha) - A simple web application that showcases the integration between [Gaia AI](https://docs.gaianet.ai/?ref=awesome-storacha) nodes (OpenAI-compatible API) and Storacha (decentralized storage network).
 
 ## Libraries & SDKs
 
