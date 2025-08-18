@@ -38,7 +38,7 @@ This list showcases the best community-driven projects, libraries, tutorials, an
 - [DappaDiary](https://github.com/DappaDanDev/dappaDiary) - Onchain Notebook LM for decentralized note-taking.
 - [SecretShare](https://github.com/Nkovaturient/SecretShare) - UCAN Delegations-based demo project for sharing API keys and other credentials in a fully secure and decentralized manner.
 - [ShareBox](https://github.com/Dhruv-Varshney-developer/ShareBox-Storacha) - UCAN-powered file sharing platform built with Next.js for secure decentralized file uploads and access control.
-- [SimpleTodo](https://github.com/NiKrause/simple-todo) - A Local-First Peer-to-Peer Demo webapp in Svelte built with OrbitDB integrated with Storacha 
+- [SimpleTodo](https://github.com/NiKrause/simple-todo) - An OrbitDB local-first peer-to-peer demo webapp built with Svelte integrated with Storacha 
 - [TripMate](https://github.com/Dhruv-Varshney-developer/Tripmate-Planner) - AI-powered travel assistant with decentralized storage capabilities.
 
 ## Libraries & SDKs
