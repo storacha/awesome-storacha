@@ -38,6 +38,7 @@ This list showcases the best community-driven projects, libraries, tutorials, an
 - [DappaDiary](https://github.com/DappaDanDev/dappaDiary) - Onchain Notebook LM for decentralized note-taking.
 - [SecretShare](https://github.com/Nkovaturient/SecretShare) - UCAN Delegations-based demo project for sharing API keys and other credentials in a fully secure and decentralized manner.
 - [ShareBox](https://github.com/Dhruv-Varshney-developer/ShareBox-Storacha) - UCAN-powered file sharing platform built with Next.js for secure decentralized file uploads and access control.
+- [SimpleTodo](https://github.com/NiKrause/simple-todo) - A Local-First Peer-to-Peer Demo webapp in Svelte built with OrbitDB and StorachaIntegration 
 - [TripMate](https://github.com/Dhruv-Varshney-developer/Tripmate-Planner) - AI-powered travel assistant with decentralized storage capabilities.
 
 ## Libraries & SDKs
@@ -46,6 +47,7 @@ This list showcases the best community-driven projects, libraries, tutorials, an
 
 - [ipfs/libp2p Huggingface Bridge](https://github.com/endomorphosis/ipfs_kit_py) - Toolkit for Storacha/IPFS integration with Hugging Face.
 - [LangChain Storacha Tool](https://github.com/black-domain/langchain-storacha-tool) - LangChain tool for agents to interact with decentralized storage network.
+- [OrbitDB-Storacha Bridge](https://github.com/NiKrause/orbitdb-storacha-bridge) - Full backup & restore with OrbitDB an IPFS based distributed database
 - [MCP-IPFS](https://github.com/alexbakers/mcp-ipfs) - Node.js server implementing Model Context Protocol for Storacha platform interaction.
 
 ## Tools
