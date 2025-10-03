@@ -36,12 +36,13 @@ This list showcases the best community-driven projects, libraries, tutorials, an
 
 - [ChatCha](https://github.com/AkashMundari/ChatCha) - Decentralized AI agent platform with data storage and verifiability using Filecoin/IPFS.
 - [DappaDiary](https://github.com/DappaDanDev/dappaDiary) - Onchain Notebook LM for decentralized note-taking.
+- [DocumentSigner Storacha](https://github.com/dhruv-varshney-developer/docusign-storacha) - A proof-of-concept system built atop Storacha, IPFS/IPNS, and UCANs that enables secure PDF signing and signer tracking without any backend infrastructure
 - [SecretShare](https://github.com/Nkovaturient/SecretShare) - UCAN Delegations-based demo project for sharing API keys and other credentials in a fully secure and decentralized manner.
 - [ShareBox](https://github.com/Dhruv-Varshney-developer/ShareBox-Storacha) - UCAN-powered file sharing platform built with Next.js for secure decentralized file uploads and access control.
 - [SimpleTodo](https://github.com/NiKrause/simple-todo) - An OrbitDB local-first peer-to-peer demo webapp built with Svelte integrated with Storacha 
 - [TripMate](https://github.com/Dhruv-Varshney-developer/Tripmate-Planner) - AI-powered travel assistant with decentralized storage capabilities.
 - [Gaia x Storacha](https://github.com/harishkotra/gaia-storacha) - A simple web application that showcases the integration between [Gaia AI](https://docs.gaianet.ai/?ref=awesome-storacha) nodes (OpenAI-compatible API) and Storacha (decentralized storage network).
-
+- [Flickshare](https://github.com/frombarmars/flickshare) - Flickshare, a peer to peer movie-review system for users on WorldChain,using Storacha for NFT metadata storage. Currently live with 1000+ active users.
 ## Libraries & SDKs
 
 > Libraries, SDKs, and APIs for integrating with Storacha.
