@@ -43,6 +43,8 @@ This list showcases the best community-driven projects, libraries, tutorials, an
 - [TripMate](https://github.com/Dhruv-Varshney-developer/Tripmate-Planner) - AI-powered travel assistant with decentralized storage capabilities.
 - [Gaia x Storacha](https://github.com/harishkotra/gaia-storacha) - A simple web application that showcases the integration between [Gaia AI](https://docs.gaianet.ai/?ref=awesome-storacha) nodes (OpenAI-compatible API) and Storacha (decentralized storage network).
 - [Flickshare](https://github.com/frombarmars/flickshare) - Flickshare, a peer to peer movie-review system for users on WorldChain,using Storacha for NFT metadata storage. Currently live with 1000+ active users.
+- [UCAN Upload Wall](https://github.com/Fatumayattani/ucan-upload-wall) - A modern, decentralized file upload service using Storacha for storage and UCANs for authorization.
+
 ## Libraries & SDKs
 
 > Libraries, SDKs, and APIs for integrating with Storacha.
@@ -64,6 +66,9 @@ This list showcases the best community-driven projects, libraries, tutorials, an
 > Guides, tutorials, and articles about Storacha.
 
 - [Tutorial Title](https://blog.example.com/tutorial) - Short description.
+
+- [Building a Decentralized File Upload Service with Storacha + UCANs](https://medium.com/@fyattani/building-a-decentralized-file-upload-service-with-storacha-ucans-b3ce05a60f32) - A step-by-step guide to building a decentralized upload service with Storacha and UCANs.
+
 
 ## Community
 
