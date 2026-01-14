@@ -44,6 +44,7 @@ This list showcases the best community-driven projects, libraries, tutorials, an
 - [Gaia x Storacha](https://github.com/harishkotra/gaia-storacha) - A simple web application that showcases the integration between [Gaia AI](https://docs.gaianet.ai/?ref=awesome-storacha) nodes (OpenAI-compatible API) and Storacha (decentralized storage network).
 - [Flickshare](https://github.com/frombarmars/flickshare) - Flickshare, a peer to peer movie-review system for users on WorldChain,using Storacha for NFT metadata storage. Currently live with 1000+ active users.
 - [UCAN Upload Wall](https://github.com/Fatumayattani/ucan-upload-wall) - A modern, decentralized file upload service using Storacha for storage and UCANs for authorization.
+- [UCAN Upload Wall with WebAuthN](https://github.com/NiKrause/ucan-upload-wall) - A fork of UCAN Upload Wall running in a pure browser environment with WebAuthN passkey authentication and (upcoming varsig and p-256 support)
 - [DownloadArchiver](https://github.com/pranavvdesai/download-archiver-storacha) - A Chrome Extension that automatically backs up your downloads into your Storacha Space. You can upload to storacha from anywhere in chrome. Includes a AI driven Dashboard which smartly categories files and enables OCR for searching any content of any file.
 
 ## Libraries & SDKs
