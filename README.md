@@ -45,6 +45,7 @@ This list showcases the best community-driven projects, libraries, tutorials, an
 - [Flickshare](https://github.com/frombarmars/flickshare) - Flickshare, a peer to peer movie-review system for users on WorldChain,using Storacha for NFT metadata storage. Currently live with 1000+ active users.
 - [UCAN Upload Wall](https://github.com/Fatumayattani/ucan-upload-wall) - A modern, decentralized file upload service using Storacha for storage and UCANs for authorization.
 - [DownloadArchiver](https://github.com/pranavvdesai/download-archiver-storacha) - A Chrome Extension that automatically backs up your downloads into your Storacha Space. You can upload to storacha from anywhere in chrome. Includes a AI driven Dashboard which smartly categories files and enables OCR for searching any content of any file.
+- [Storacha Vault dApp](https://github.com/Digitalbitcoin/Storacha) - Decentralized IPFS storage solution featuring email verification, account activation, and UCAN-based delegation for secure asset management.
 
 ## Libraries & SDKs
 
