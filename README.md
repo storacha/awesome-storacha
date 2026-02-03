@@ -71,6 +71,7 @@ This list showcases the best community-driven projects, libraries, tutorials, an
 
 - [Building a Decentralized File Upload Service with Storacha + UCANs](https://medium.com/@fyattani/building-a-decentralized-file-upload-service-with-storacha-ucans-b3ce05a60f32) - A step-by-step guide to building a decentralized upload service with Storacha and UCANs.
 
+- [UCAN Swagger Pattern](https://github.com/Goddhi/UCAN-visualization-app)  A reference implementation and guide for documenting UCAN-secured APIs using OpenAPI/Swagger, including interactive token generation.
 
 ## Community
 
