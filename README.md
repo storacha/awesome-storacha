@@ -46,6 +46,7 @@ This list showcases the best community-driven projects, libraries, tutorials, an
 - [UCAN Upload Wall](https://github.com/Fatumayattani/ucan-upload-wall) - A modern, decentralized file upload service using Storacha for storage and UCANs for authorization.
 - [UCAN Upload Wall with WebAuthN](https://github.com/NiKrause/ucan-upload-wall) - A fork of UCAN Upload Wall running in a pure browser environment with WebAuthN passkey authentication and (upcoming varsig and p-256 support)
 - [DownloadArchiver](https://github.com/pranavvdesai/download-archiver-storacha) - A Chrome Extension that automatically backs up your downloads into your Storacha Space. You can upload to storacha from anywhere in chrome. Includes a AI driven Dashboard which smartly categories files and enables OCR for searching any content of any file.
+- [Storacha Vault dApp](https://github.com/Digitalbitcoin/Storacha) - Decentralized IPFS storage solution featuring email verification, account activation, and UCAN-based delegation for secure asset management.
 
 ## Libraries & SDKs
 
